@@ -23,6 +23,7 @@ public class FirebaseConfig {
 
             FirebaseOptions options = FirebaseOptions.builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
+                    .setDatabaseUrl("https://car-garage-management.firebaseio.com")
                     .build();
 
             if (FirebaseApp.getApps().isEmpty()) {
